@@ -33,6 +33,13 @@ def move_left():
         draw_boy(30,y)
     pass
 
+def move_bottom_to_top(): #삼각형 우측하단에서 중앙상단
+    pass
+
+
+def move_top_to_bottom(): #삼각형 중앙상단에서 좌측하단
+    pass
+
 def move_rectangle():
     print("move_rectangle")
     move_bottom()
@@ -40,6 +47,14 @@ def move_rectangle():
     move_top()
     move_left()
     pass
+
+def move_triangle():
+    print("move_triangle")
+    move_bottom()
+    move_bottom_to_top()
+    move_top_to_bottom()
+    pass
+
 
 def move_circle():
     print("move_circle")
@@ -50,9 +65,14 @@ def move_circle():
         draw_boy(x, y)
     pass
 
+
+
+
 while True:
+    # move_rectangle()
+    move_triangle()
     # move_circle()
-    move_rectangle()
+
     break
     pass #패스
 
