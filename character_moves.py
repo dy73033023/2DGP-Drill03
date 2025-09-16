@@ -11,16 +11,23 @@ def move_rectangle():
 
 def move_circle():
     print("move_circle")
-    clear_canvas_now()
-    boy.draw_now(400,300)
-    delay(0.1)
+    r = 200
+
+    for deg in range(0, 360, 5):
+        x = r * math.cos(math.radians(deg)) + 400
+        y = r * math.sin(math.radians(deg)) + 300
+        clear_canvas_now()
+        boy.draw_now(x, y)
+        delay(0.1)
+
+
     pass
 
 
 while True:
     move_circle()
     move_rectangle()
-
+    break
     pass #패스
 
 close_canvas()
