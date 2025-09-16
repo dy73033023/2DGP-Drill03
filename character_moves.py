@@ -2,13 +2,13 @@ from pico2d import *
 
 open_canvas()
 
-
 def move_rectangle():
-    pass
+    print("move_rectangle")
+
 
 
 def move_circle():
-    pass
+    print("move_circle")
 
 
 while True:
