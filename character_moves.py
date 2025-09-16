@@ -2,6 +2,8 @@ from pico2d import *
 
 open_canvas()
 
-# fill here
+
+while True:
+    pass #패스
 
 close_canvas()
