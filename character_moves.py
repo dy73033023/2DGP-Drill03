@@ -11,34 +11,39 @@ def draw_boy(x: float, y: float):
 
 def move_top():
     print("move_top")
-    for x in range(0,800,5):
+    for x in range(770,30,-20):
         draw_boy(x,550)
     pass
 
 def move_right():
     print("move_right")
+    for y in range(50,550,20):
+        draw_boy(770,y)
     pass
 
 def move_bottom():
     print("move_bottom")
+    for x in range(30,770,20):
+        draw_boy(x,50)
     pass
 
 def move_left():
     print("move_left")
+    for y in range(550,50,-20):
+        draw_boy(30,y)
     pass
 
 def move_rectangle():
     print("move_rectangle")
-    move_top()
-    move_right()
     move_bottom()
+    move_right()
+    move_top()
     move_left()
     pass
 
 def move_circle():
     print("move_circle")
     r = 200
-
     for deg in range(0, 360, 5):
         x = r * math.cos(math.radians(deg)) + 400
         y = r * math.sin(math.radians(deg)) + 300
